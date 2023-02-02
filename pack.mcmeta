@@ -1,0 +1,20 @@
+{
+    "pack": {
+        "pack_format": 10,
+        "description": "A Powerful Data-Pack Framework",
+        "meta": {
+            "authors": [
+                {
+                    "nickname": "BubbleFish",
+                    "uuid": "24c8f8f8-9db3-4878-b8ea-530dbe583196",
+                    "role": "Owner"
+                }
+            ],
+            "links": {
+                "modrinth": "https://modrinth.com/datapack/confetti",
+                "github": "https://github.com/Confetti"
+            },
+            "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        }
+    }
+}

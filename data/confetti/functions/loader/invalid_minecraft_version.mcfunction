@@ -1,0 +1,3 @@
+data modify storage confetti API.Message.Type set value "Error"
+data modify storage confetti API.Message.Lines set value ['"Unsupported Minecraft version!"', '["\\u251c ", {"text":"Required", "color":"green", "bold":true}, " \\u25b6 ", {"nbt":"Stack[-1].Minecraft.From[]", "storage":"confetti", "separator":"."}, "-", {"nbt":"Stack[-1].Minecraft.To[]", "storage":"confetti", "separator":"."}]', '["\\u2514 ", {"text":"Provided", "color":"red", "bold":true}, " \\u25b6 ", {"nbt":"Minecraft[0]", "storage":"confetti"}, ".", {"nbt":"Minecraft[1]", "storage":"confetti"}, ".", {"nbt":"Minecraft[2]", "storage":"confetti"}]']
+function api:confetti/feedback/broadcast
