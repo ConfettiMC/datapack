@@ -1,1 +1,2 @@
-# -> #minecraft:tick
+#! #minecraft:tick
+# ...

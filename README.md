@@ -41,7 +41,7 @@ You will need to register your pack inside of a function tag `#confetti:load` (`
 
 Inside of the function you will only need to append to the confetti Loader storage. For example:
 ```mcfunction
-data modify storage confetti Loader append {Namespace: "example", Name: '"Confetti Example"', Version: [B; 1b, 0b, 0b], Minecraft: {From: [B; 1b, 16b, 0b], To:[B; 1b, 19b, 3b]}, Dependencies:[{Namespace: "example_dependency", Version:{Min:[B; 1b, 2b, 0b]}, Download:'{"text":"Modrinth", "clickEvent":{"action":"open_link", "value":"https://modrinth.com/example_dependency"}}'}], Gamerules:[{Id:"example_gamerule", Default:0b, Description:'"This is an example gamerule that can be toggled to true or false"'}], Permissions:[{Id:"example_permission", Default:"CREATIVE_MODE", Description:'"This is an example permission"'}]}
+data modify storage confetti Loader append value {Namespace: "example", Name: '"Confetti Example"', Version: [B; 1b, 0b, 0b], Minecraft: {From: [B; 1b, 16b, 0b], To:[B; 1b, 19b, 3b]}, Dependencies:[{Namespace: "example_dependency", Version:{Min:[B; 1b, 2b, 0b]}, Download:'{"text":"Modrinth", "clickEvent":{"action":"open_link", "value":"https://modrinth.com/example_dependency"}}'}], Gamerules:[{Id:"example_gamerule", Default:0b, Description:'"This is an example gamerule that can be toggled to true or false"'}], Permissions:[{Id:"example_permission", Default:"CREATIVE_MODE", Description:'"This is an example permission"'}]}
 ```
 * **Namespace** - Your unique identifier YOU will use later to answer Confetti's function calls
 
@@ -69,7 +69,13 @@ Adds control of data-packs, game rules, permissions and more accessable by users
 ---
 
 ## 🗃️ API References
-...
+* **Feedback** - Sending messages to players.
+    * **Broadcast** - Send log message to all players online.
+        * **Call** - `function api:confetti/feedback/broadcast`
+        * **Arguments** (`API.Call`):
+            * `Path` - JSON String;
+            * `Type` - "Error", "Warning", "Info" or "Done";
+            * `Lines` - Array of JSON Strings;
 
 ## 📔 GameRules
 ...
