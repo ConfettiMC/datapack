@@ -69,13 +69,15 @@ Adds control of data-packs, game rules, permissions and more accessable by users
 ---
 
 ## 🗃️ API References
-* **Feedback** - Sending messages to players.
+* **Feedback** - Related to messages that are sent to players.
     * **Broadcast** - Send log message to all players online.
         * **Call** - `function api:confetti/feedback/broadcast`
         * **Arguments** (`API.Call`):
             * `Path` - JSON String;
             * `Type` - "Error", "Warning", "Info" or "Done";
             * `Lines` - Array of JSON Strings;
+    * **Silence Feedback** - Silence the "executed ... commands from ..." for a specific command manually ran by player
+        * **Call** - `function api:confetti/feedback/silence_feedback`
 
 ## 📔 GameRules
 ...
