@@ -7,4 +7,3 @@ execute store result score #Minor confetti run data get storage confetti Heap.Pa
 
 execute if data storage confetti Heap.Dependencies[-1].Version.Exact run function confetti:loader/dependencies/check_version/exact
 execute unless data storage confetti Heap.Dependencies[-1].Version.Exact run function confetti:loader/dependencies/check_version/range
-
