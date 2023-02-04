@@ -1,6 +1,6 @@
 {
     "values": [
-        "confetti:core/load",
-        "confetti:core/garbage_collector"
+        "confetti:core/garbage_collector",
+        "confetti:core/load"
     ]
 }
