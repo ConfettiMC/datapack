@@ -1,6 +1,7 @@
 # Setup API call author and type for future errors
-data modify storage confetti API.Call set value {Type: "Error"}
 data modify storage confetti API.Call.Pack set from storage confetti Loader[-1].Name
+data modify storage confetti Loader[-1].Errors set value []
+data modify storage confetti Loader[-1].Warnings set value []
 
 # Store required Minecraft versions, weight them and compare
 execute store result score #From.Weight confetti store result score #From.Primary confetti run data get storage confetti Loader[-1].Minecraft.From[0]
