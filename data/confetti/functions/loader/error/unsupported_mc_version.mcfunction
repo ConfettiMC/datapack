@@ -1,2 +1,4 @@
+data modify storage confetti API.Call.Type set value "Error"
 data modify storage confetti API.Call.Lines set value ['"Unsupported Minecraft version!"', '["\\u251c ", {"text":"Required", "color":"green", "bold":true}, " \\u25b6 ", {"score":{"name":"#From.Primary", "objective":"confetti"}}, ".", {"score":{"name":"#From.Major", "objective":"confetti"}}, ".", {"score":{"name":"#From.Minor", "objective":"confetti"}}, "-", {"score":{"name":"#To.Primary", "objective":"confetti"}}, ".", {"score":{"name":"#To.Major", "objective":"confetti"}}, ".", {"score":{"name":"#To.Minor", "objective":"confetti"}}]', '["\\u2514 ", {"text":"Provided", "color":"red", "bold":true}, " \\u25b6 ", {"score":{"name":"MC.Primary", "objective":"api"}}, ".", {"score":{"name":"MC.Major", "objective":"api"}}, ".", {"score":{"name":"MC.Minor", "objective":"api"}}]']
+data modify storage confetti Loader[-1].Errors append value '"Unsupported Minecraft version."'
 function api:confetti/feedback/broadcast

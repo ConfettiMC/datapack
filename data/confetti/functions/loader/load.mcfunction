@@ -2,7 +2,7 @@
 data modify storage confetti Datapacks set value []
 data modify storage confetti Loader set value []
 scoreboard players set #Id confetti 0
-function #confetti:load
+function #confetti:pack
 
 # Process datapacks
 data modify storage confetti Heap.Loader set from storage confetti Loader
