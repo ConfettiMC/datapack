@@ -1,5 +1,6 @@
 scoreboard players set #Limit confetti 8
 scoreboard players operation #Scroll confetti = @s confetti_scroll
+scoreboard players set #Index confetti 0
 execute store result score #f confetti run data get storage confetti API.Player.Confetti.GUI.Windows[0].List
 execute if score #f confetti matches 1.. run function confetti:callback/gui/render_window/print_list/scroll
 execute if score #f confetti matches 1.. run tellraw @s ["\u2502 ", {"text":"And ", "color":"#898989", "extra":[{"score":{"name":"#f", "objective":"confetti"}}, " more..."]}]
