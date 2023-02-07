@@ -6,7 +6,7 @@ execute if score #Index confetti matches 4 run tellraw @s ["\u2502 ", {"nbt":"AP
 execute if score #Index confetti matches 5 run tellraw @s ["\u2502 ", {"nbt":"API.Player.Confetti.GUI.Windows[0].List[0].Action", "storage":"confetti", "interpret":true, "clickEvent":{"action":"run_command", "value":"/trigger zzz.action set 6"}}, " ", {"nbt":"API.Player.Confetti.GUI.Windows[0].List[0].Label", "storage":"confetti", "interpret":true, "bold":true}, " ", {"nbt":"API.Player.Confetti.GUI.Windows[0].List[0].Status", "storage":"confetti", "interpret":true}]
 execute if score #Index confetti matches 6 run tellraw @s ["\u2502 ", {"nbt":"API.Player.Confetti.GUI.Windows[0].List[0].Action", "storage":"confetti", "interpret":true, "clickEvent":{"action":"run_command", "value":"/trigger zzz.action set 7"}}, " ", {"nbt":"API.Player.Confetti.GUI.Windows[0].List[0].Label", "storage":"confetti", "interpret":true, "bold":true}, " ", {"nbt":"API.Player.Confetti.GUI.Windows[0].List[0].Status", "storage":"confetti", "interpret":true}]
 execute if score #Index confetti matches 7 run tellraw @s ["\u2502 ", {"nbt":"API.Player.Confetti.GUI.Windows[0].List[0].Action", "storage":"confetti", "interpret":true, "clickEvent":{"action":"run_command", "value":"/trigger zzz.action set 8"}}, " ", {"nbt":"API.Player.Confetti.GUI.Windows[0].List[0].Label", "storage":"confetti", "interpret":true, "bold":true}, " ", {"nbt":"API.Player.Confetti.GUI.Windows[0].List[0].Status", "storage":"confetti", "interpret":true}]
-# ... TODO ACTION BUTTON
+
 scoreboard players remove #f confetti 1
 scoreboard players remove #Limit confetti 1
 scoreboard players add #Index confetti 1
