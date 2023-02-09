@@ -1,0 +1,3 @@
+data modify storage confetti Heap.Loader[-1].Errors set value 1b
+data modify storage confetti Logger.Message set value '["Minecraft version ", {"score":{"name":"MC.Primary", "objective":"api"}, "color":"#37ff00", "extra":[".", {"score":{"name":"MC.Major", "objective":"api"}}, ".", {"score":{"name":"MC.Minor", "objective":"api"}}]}, " is not supported. ", {"text":"Required:", "bold":true}, " [", {"nbt":"Heap.Loader[-1].Minecraft.From[]", "storage":"confetti", "separator":".", "color":"#37ff00"}, "-", {"nbt":"Heap.Loader[-1].Minecraft.To[]", "storage":"confetti", "separator":".", "color":"#37ff00"}, "]"]'
+function api:confetti/feedback/broadcast/error

@@ -1,0 +1,1 @@
+tellraw @s ["\n[", {"nbt":"Logger.Name", "storage":"confetti", "interpret": true, "bold":true}, "]", {"text":" \u2714 ", "color":"#37ff00", "extra":[{"text":"DONE", "bold":true}]}, {"text":" \u00bb ", "color":"#898989"}, {"nbt":"Logger.Message", "storage": "confetti", "interpret": true}]

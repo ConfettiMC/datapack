@@ -1,0 +1,3 @@
+data modify storage confetti Heap.Loader[-1].Warnings set value 1b
+data modify storage confetti Logger.Message set value '["The version of ", {"nbt":"Heap.Packs[-1].Name", "storage":"confetti", "color":"#ffc800"}, " (", {"score":{"name":"#Primary", "objective":"confetti"}, "color":"#37ff00", "extra":[".", {"score":{"name":"#Major", "objective":"confetti"}}, ".", {"score":{"name":"#Minor", "objective":"confetti"}}]}, ") is expected to be ", {"score":{"name":"#Exact.Primary", "objective":"confetti"}, "color":"#37ff00", "extra":[".", {"score":{"name":"#Exact.Major", "objective":"confetti"}}, ".", {"score":{"name":"#Exact.Minor", "objective":"confetti"}}]}, "!"]'
+function api:confetti/feedback/broadcast/warning
