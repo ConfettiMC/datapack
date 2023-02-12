@@ -1,4 +1,4 @@
-execute if entity @s[tag=confetti.stored] run function confetti:database/players/store_player
+execute if entity @s[tag=!confetti.stored] run function confetti:database/players/store_player
 execute if score @s cft.on_leave matches 1.. run function confetti:handle/on_leave
 
 scoreboard players enable @s zzz.scroll_down
