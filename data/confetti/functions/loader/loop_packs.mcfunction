@@ -20,6 +20,11 @@ data remove storage confetti Heap.Loader[-1].Minecraft
 execute store result score #Heap.Dependencies confetti run data get storage confetti Heap.Loader[-1].Dependencies
 execute if score #Heap.Dependencies confetti matches 1.. run function confetti:loader/dependencies/loop_dependencies
 
+# Default gamerules
+data modify storage confetti Heap.GameRules set from storage confetti Heap.Loader[-1].GameRules
+execute store result score #Heap.GameRules confetti run data get storage confetti Heap.GameRules
+execute if score #Heap.GameRules confetti matches 1.. run function confetti:loader/gamerules/loop_gamerules
+
 # Iterate
 scoreboard players remove #Heap.Loader confetti 1
 data modify storage confetti Datapacks append from storage confetti Heap.Loader[-1]
